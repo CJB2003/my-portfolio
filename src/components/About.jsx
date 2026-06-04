@@ -8,12 +8,22 @@ function About() {
         I'm a passionate software developer with experience in both frontend and
         backend technologies.
       </p>
-      <ul>
-        <li>Proficient in Python, C++, Java, JavaScript, React, and JavaFX.</li>
-        <li>Experience with MySQL databases.</li>
-        <li>
-          Strong problem-solving skills and a love for learning new
-          technologies.
+      <ul className="card-grid">
+        <li className="card">
+          <p>Proficient in Python, C++, Java, JavaScript, React, and JavaFX.</p>
+        </li>
+      </ul>
+      <ul className="card-grid">
+        <li className="card">
+          <p>Experience with MySQL databases.</p>
+        </li>
+      </ul>
+      <ul className="card-grid">
+        <li className="card">
+          <p>
+            Strong problem-solving skills and a love for learning new
+            technologies.
+          </p>
         </li>
       </ul>
     </section>
