@@ -13,7 +13,7 @@ function App() {
       <Projects />
       <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
