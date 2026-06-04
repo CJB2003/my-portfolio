@@ -1,25 +1,42 @@
+import "./Navbar.css";
+import { useState, useEffect } from "react";
+
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>Chris Bunny</h2>
-      <ul style={styles.links}>
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      <h2 className="logo">Chris Bunny</h2>
+      <ul className="links">
         <li>
-          <a href="#Home" style={styles.link}>
+          <a href="#Home" className="link">
             Home
           </a>
         </li>
         <li>
-          <a href="#About" style={styles.link}>
+          <a href="#About" className="link">
             About
           </a>
         </li>
         <li>
-          <a href="#Projects" style={styles.link}>
+          <a href="#Projects" className="link">
             Projects
           </a>
         </li>
         <li>
-          <a href="#Contact" style={styles.link}>
+          <a href="#Contact" className="link">
             Contact
           </a>
         </li>

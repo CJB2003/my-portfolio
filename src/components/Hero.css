@@ -1,4 +1,29 @@
 .hero {
   background-color: var(--bg-dark);
   color: var(--text-primary);
+  padding-top: 5rem;
+  display: flex;
+  text-align: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-top: 1rem;
 }
