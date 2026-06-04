@@ -1,8 +1,10 @@
+import "../styling/Projects.css";
+
 function Projects() {
   return (
-    <section id="Projects">
+    <section id="Projects" className="projects">
       <h1>Projects</h1>
-      <div>
+      <div className="project-card">
         <h3>BNY Finance Ledger</h3>
         <p>
           A finance ledger application built with JavaFX and MySQL, allowing
@@ -12,7 +14,7 @@ function Projects() {
           View on GitHub
         </a>
       </div>
-      <div>
+      <div className="project-card">
         <h3>Golden Crunch Chicken</h3>
         <p>
           A Java CLI point-of-sale ordering application for a premium Korean

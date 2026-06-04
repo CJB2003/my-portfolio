@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../styling/Navbar.css";
 import { useState, useEffect } from "react";
 
 function Navbar() {
@@ -17,7 +17,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+    <nav id="Navbar" className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <h2 className="logo">Chris Bunny</h2>
       <ul className="links">
         <li>

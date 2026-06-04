@@ -1,8 +1,8 @@
-import "./About.css";
+import "../styling/About.css";
 
 function About() {
   return (
-    <section className="about">
+    <section id="About" className="about">
       <h2>About Me</h2>
       <p>
         I'm a passionate software developer with experience in both frontend and

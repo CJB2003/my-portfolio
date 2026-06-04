@@ -1,6 +1,8 @@
+import "../styling/Contact.css";
+
 function Contact() {
   return (
-    <section id="Contact">
+    <section id="Contact" className="contact">
       <h1>Contact Me</h1>
       <a href="https://www.linkedin.com/in/christopher-bunny-704617309/">
         LinkedIn
