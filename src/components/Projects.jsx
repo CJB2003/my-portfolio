@@ -17,10 +17,11 @@ function Projects() {
       <div className="project-card">
         <h3>Golden Crunch Chicken</h3>
         <p>
-          A Java CLI point-of-sale ordering application for a premium Korean
-          fried chicken restaurant. Customers can fully customize their order —
-          choosing their chicken cut, prep style, toppings, sauces, drinks, and
-          sides — before checking out and receiving a timestamped receipt file.
+          A Java CLI project with a frontend website built with React that is a
+          point-of-sale ordering application for a premium Korean fried chicken
+          restaurant. Customers can fully customize their order — choosing their
+          chicken cut, prep style, toppings, sauces, drinks, and sides — before
+          checking out and receiving a timestamped receipt file.
         </p>
         <a href="https://github.com/CJB2003/golden-crunch-chicken">
           View on GitHub

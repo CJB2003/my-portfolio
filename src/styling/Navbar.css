@@ -27,9 +27,14 @@
   color: var(--text-primary);
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: bold;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: var(--accent);
-  transition: color 0.3s ease;
+  background-color: var(--accent);
+  color: var(--bg-dark);
 }

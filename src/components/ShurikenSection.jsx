@@ -14,11 +14,14 @@ function ShurikenSection() {
 
       const rect = section.getBoundingClientRect();
       const total = rect.height + window.innerHeight;
-      const scrolled = window.innerHeight - rect.top;
+      const scrolled = -rect.top;
       const progress = Math.max(0, Math.min(1, scrolled / total));
-      const angle = progress * 720;
+      const opacity = Math.max(0, 1 - progress * 2);
 
-      shuriken.style.transform = `rotate(${angle}deg)`;
+      console.log("progress:", progress, "opacity:", opacity);
+
+      shuriken.style.transform = `rotate(${progress * 720}deg)`;
+      shuriken.style.opacity = opacity;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
