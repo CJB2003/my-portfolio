@@ -3,14 +3,14 @@ import Hero from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Shuriken from "./assets/shuriken.svg";
+import ShurikenSection from "./components/Shuriken";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <img src={Shuriken} alt="shuriken" style={{ width: "200px" }} />
+      <ShurikenSection />
       <About />
       <Projects />
       <Contact />

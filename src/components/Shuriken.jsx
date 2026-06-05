@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Shuriken from "../assets/shuriken.svg";
-import "../styling/ShurikenSection.css";
+import "../styling/Shuriken.css";
 
 function ShurikenSection() {
   const sectionRef = useRef(null);
