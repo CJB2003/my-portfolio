@@ -6,8 +6,10 @@
   color: var(--text-primary);
   padding: 4rem 2rem;
   justify-content: center;
+  padding-top: 6rem;
   text-align: center;
   word-spacing: 0.05em;
+  height: 100vh;
 }
 
 .about h2 {
